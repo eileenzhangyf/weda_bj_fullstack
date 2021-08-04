@@ -1,0 +1,48 @@
+{
+  "name": "react-weda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./client/src/index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "start": "npm run dev",
+    "unit": "jest --config test/unit/jest.conf.js --coverage",
+    "test": "npm run unit",
+    "lint": "eslint --ext .js,.vue src test/unit",
+    "build": "node build/build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "buttercms": "^1.2.7",
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "iframe": "^1.0.0",
+    "moment": "^2.29.1",
+    "nodemailer": "^6.6.3",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-bootstrap-dropdown": "^0.3.0",
+    "react-bootstrap-validation": "^0.1.11",
+    "react-dom": "^17.0.2",
+    "react-iframe": "^1.8.0",
+    "react-native-unordered-list": "^1.0.4",
+    "react-native-web": "^0.17.1",
+    "react-player": "^2.9.0",
+    "react-router-dom": "^5.2.0",
+    "react-slideshow-image": "^3.5.0",
+    "reactstrap": "^8.9.0",
+    "redux": "^4.1.0",
+    "register-service-worker": "^1.7.2",
+    "terser": "3.14.1",
+    "video-react": "^0.14.1"
+  },
+  "proxy": "http://localhost:5000",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "react-scripts": "^4.0.3"
+  }
+}
